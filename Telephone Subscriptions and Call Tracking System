@@ -169,7 +169,7 @@ int main()
 
 
             case 7:
-                printf("Telefon numaralarinin ilk üc hanesini giriniz:\n");
+                printf("Telefon numaralarinin ilk Ã¼c hanesini giriniz:\n");
                 scanf("%d",&tel_no);
                 //Girilen ilk uc haneden 100 cikartiliyor ve hash tablosundaki o numara ile baslayan numaralarin bagli listesine erisiliyr..
                 hash_tel=tel_no-100;
@@ -420,7 +420,7 @@ void gorusme_ekle(abone *abonePtr)
 
     gorusmenin_tarihinin_cozumlemesi(&gorusme_yili,&gorusme_ayi,&gorusme_gunu,yeni_gorusme->tarih);
     tarih_int=10000*gorusme_yili+100*gorusme_ayi+gorusme_gunu;//Yil ay gun seklinde bir int sayi uretiliyor eklenecek gorusme icin
-    gecici=abonePtr->gorusmePtr;//Geciciye abonenin gorusmelerinin baþlangiç dugumunun adresi gonderiliyor
+    gecici=abonePtr->gorusmePtr;//Geciciye abonenin gorusmelerinin baÃ¾langiÃ§ dugumunun adresi gonderiliyor
     if(abonePtr->gorusmePtr==gecici->sonraki){//Listeye ilk gorusme ekleniyor..
         gecici->onceki=yeni_gorusme;
         gecici->sonraki=yeni_gorusme;
